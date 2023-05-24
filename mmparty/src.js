@@ -36,7 +36,7 @@ function getMerkleDataFor(addr) {
 	setData(text)
 
 	document.getElementById('screencapData').innerText = 
-		'\nNow input this data as explained in the following screenshot:'
+		'\nGo to the Etherscan link, connect until it\'s green, then input this data as explained in the following screenshot:'
 
 	document.getElementById('tutorial').style.display = 'block'
 	document.getElementById('etherscanLink').style.display = 'block'
