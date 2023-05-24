@@ -1,0 +1,16 @@
+#outputData {
+  overflow-wrap: break-word;
+}
+
+#screencapData {
+	font-weight: bold;
+}
+
+#tutorial {
+	display: none;
+	width: 400px;
+}
+
+#etherscanLink {
+	display: none;
+}
