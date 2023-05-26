@@ -8,8 +8,8 @@ fetch('wls.txt')
         const filteredLines = lines.filter(line => line.trim().length > 0);
 
         // Assign the array to the constant
-        const wls = filteredLines;
+        window.wls = filteredLines;
         
-        console.log(wls);
+        console.log(window.wls);
     })
     .catch(error => console.log('Error:', error));
