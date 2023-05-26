@@ -9,5 +9,7 @@ fetch('wls.txt')
 
         window.wls = filteredLines;
         window.dispatchEvent(new CustomEvent('wlsReady'));
+		
+		document.getElementById('getDataBtn').disabled = false;
     })
     .catch(error => console.log('Error:', error));
