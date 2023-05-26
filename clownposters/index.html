@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkle Root Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+		<h1>MILADY MAKER PARTY minting from etherscan :)</h1>
+
+		<p>Input your wallet :3</p>
+    <input 
+			type="text"
+			id="userWallet" 
+			size="50" 
+			placeholder="Your address (not ENS)"
+		>
+
+		<button onclick="genData()">Get data</button>
+
+		<p id="outputData">
+		</p>
+		
+		<a
+			id="etherscanLink"
+			href="https://etherscan.io/address/0x7Fb817AEce179d3248B6aE09d8a3556bf29dC85a#writeContract"
+		>
+			etherscan link
+		</a>
+		<p id="screencapData">
+		</p>
+
+		<img id="tutorial" src="./tutorial.png" />
+
+	<script src="wls.js"></script>
+	<script src="src.js"></script>
+  </body>
+</html>
