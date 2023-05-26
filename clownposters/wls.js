@@ -1,15 +1,13 @@
 fetch('wls.txt')
     .then(response => response.text())
     .then(text => {
-        // Split the text by newlines to get an array
-        const lines = text.split('\n');
-        
-        // Filter out any empty lines
+        // Determine which line break character is used
+        const lineBreak = text.indexOf('\r\n') !== -1 ? '\r\n' : '\n';
+
+        const lines = text.split(lineBreak);
         const filteredLines = lines.filter(line => line.trim().length > 0);
 
-        // Assign the array to the constant
         window.wls = filteredLines;
-        
-        console.log(window.wls);
+        window.dispatchEvent(new CustomEvent('wlsReady'));
     })
     .catch(error => console.log('Error:', error));
